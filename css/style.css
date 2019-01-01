@@ -1,0 +1,85 @@
+:root {
+  --candy-pink: radial-gradient(#ff85b7, #ff5583);
+  --green: radial-gradient(#00e981, #00ad6e);
+}
+
+@font-face {
+  font-family: "Unicorn";
+  src: "css\fonts\Good Unicorn - TTF.ttf";
+}
+
+@keyframes bgcolorchange {
+  0% {
+    background: var(--candy-pink);
+  }
+  50% {
+    background: var(--green);
+  }
+  100% {
+    background: var(--candy-pink);
+  }
+}
+
+/* Chrome, Safari, Opera */
+ @-webkit-keyframes bgcolorchange {
+   0% {
+     background: var(--candy-pink);
+   }
+   50% {
+     background: var(--green);
+   }
+   100% {
+     background: var(--candy-pink);
+   }
+ }
+
+html, body {
+  height:100%;
+  margin: 0;
+}
+
+.container-fluid {
+  -webkit-animation: bgcolorchange 300s infinite; /* Chrome, Safari, Opera */
+  animation: 300s infinite bgcolorchange;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 0 !important;
+}
+
+.frame-video {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frame-video iframe {
+  background-color: white;
+  padding: 5px;
+  width: 768px;
+  height: 432px;
+}
+
+.text-header {
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+  padding-left: 115px;
+  padding-top: 60px;
+}
+
+.text-header .title {
+  font-size: 65px;
+  margin: 0;
+}
+
+.text-header .subtitle {
+  font-size: 25px;
+  margin: 0;
+}
+
+/*  gradient
+
+rose bonbon: radial-gradient(#ff85b7, #ff5583)
+
+
+*/

@@ -1,0 +1,14 @@
+{
+    "name": "pierre-olivier/musicaday",
+    "description": "Every day, a music i like",
+    "require": {
+        "google/apiclient": "^2.2",
+        "twbs/bootstrap": "^4.2"
+    },
+    "authors": [
+        {
+            "name": "Pierreolivier Dezard",
+            "email": "pierreolivier.dezard@gmail.com"
+        }
+    ]
+}
